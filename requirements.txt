@@ -1,0 +1,7 @@
+requests
+pandas
+matplotlib
+wordcloud
+nltk
+textblob
+python-dotenv
