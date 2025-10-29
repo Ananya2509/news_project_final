@@ -1,0 +1,25 @@
+# Ignore environment files and secrets
+.env
+
+# Python cache and build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter or temporary files
+.ipynb_checkpoints/
+*.sqlite3
+*.log
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Output data files
+news_data_with_sentiment.csv

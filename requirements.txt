@@ -5,3 +5,9 @@ wordcloud
 nltk
 textblob
 python-dotenv
+#os, dotenv: handle environment variables (API key storage)
+#requests: connects to NewsAPI and fetches online news
+#pandas: organizes the data into tables (DataFrame)
+#matplotlib and wordcloud: create graphs and word clouds
+#textblob: performs sentiment analysis (positive/negative/neutral)
+#nltk: helps clean and preprocess text

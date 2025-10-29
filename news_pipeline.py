@@ -4,7 +4,7 @@ news_pipeline.py
 Fetch news from NewsAPI, clean text, analyze word counts, create wordcloud,
 perform sentiment analysis with TextBlob, plot results and save CSV.
 """
-import os
+import os 
 from datetime import datetime, timedelta
 import requests
 import pandas as pd
@@ -15,7 +15,7 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from textblob import TextBlob
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
 
 # Load .env (looks for .env file in project root)
 load_dotenv()
@@ -141,10 +141,9 @@ def plot_sentiment_distribution(df, save=False):
 # Main pipeline
 def main():
     print("Fetching articles...")
-    articles = fetch_news(query="AI OR artificial intelligence", from_days=30, page_size=50)
+    articles = fetch_news(query="AI OR artificial intelligence", from_days=30, page_size=100)
     df = articles_to_df(articles)
     print(f"Collected {len(df)} articles.")
-
     # Merge text fields and clean
     df["raw_text"] = (df["title"].fillna("") + " " + df["description"].fillna("") + " " + df["content"].fillna(""))
     df["cleaned_text"] = df["raw_text"].apply(clean_text)
