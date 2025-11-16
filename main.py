@@ -19,14 +19,15 @@ import google.generativeai as genai
 
 # ---------- STEP 1: Load your data ----------
 # (Change filename if needed)
-DATA_FILE = "news_data_with_sentiment.csv"
+DATA_FILE = "outputs/news_sentiment_report.csv"
 
 if not os.path.exists(DATA_FILE):
     raise FileNotFoundError(f"❌ Data file not found: {DATA_FILE}")
 
 # Read CSV (or Excel)
 if DATA_FILE.endswith(".csv"):
-    df = pd.read_csv(DATA_FILE)
+    df = pd.read_csv(DATA_FILE, encoding='latin1')
+
 else:
     df = pd.read_excel(DATA_FILE)
 
