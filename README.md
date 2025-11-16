@@ -35,3 +35,5 @@ This project fetches the latest news articles from the **NewsAPI**, cleans and a
    ```bash
    git clone https://github.com/YOUR-USERNAME/news_project.git
    cd news_project
+## 🚀 Live Streamlit Dashboard
+https://newsprojectfinal-6rh4vc6tjrrbrovg7srqcr.streamlit.app/
