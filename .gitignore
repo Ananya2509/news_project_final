@@ -2,8 +2,9 @@
 # Environment & Credentials
 # -------------------------------
 .env
-*.json           # hides Google service account JSONs
-!README.json     # (keeps any intentional public JSON)
+*.env
+*.json                 # Hide service keys / sensitive JSON files
+!README.json           # Keep any intentionally public JSON file
 
 # -------------------------------
 # Python cache and build files
